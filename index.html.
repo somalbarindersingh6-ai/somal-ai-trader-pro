@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10100e">
+<title>SOMAL AI TRADER PRO</title>
+<style>
+:root {
+  --gold: #e8bd64;
+  --bg: #10100e;
+  --panel: #191916;
+  --muted: #99968c;
+  --border: #343229;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: #f5f1e8;
+  font-family: Arial, sans-serif;
+}
+header {
+  padding: 25px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+.logo { color: var(--gold); font-weight: 800; letter-spacing: 1px; }
+.logo span { color: white; }
+.status {
+  color: #e8bd64;
+  border: 1px solid #77602f;
+  padding: 7px 11px;
+  border-radius: 20px;
+  font-size: 11px;
+}
+main { max-width: 1100px; margin: auto; padding: 35px 5%; }
+.hero { margin-bottom: 30px; }
+.eyebrow { color: var(--gold); letter-spacing: 3px; font-size: 11px; }
+h1 { font-size: clamp(30px, 6vw, 48px); margin: 12px 0; }
+h1 span { color: var(--gold); }
+.subtitle { color: var(--muted); line-height: 1.6; }
+.notice {
+  border: 1px solid #66552e;
+  background: #211d13;
+  color: #e8c77f;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 25px 0;
+}
+.section-title { font-size: 19px; margin: 30px 0 15px; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 13px;
+}
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  min-width: 0;
+}
+.card small { color: var(--muted); }
+.value { font-size: 27px; font-weight: bold; margin-top: 13px; }
+.gold { color: var(--gold); }
+.chart {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  border: 1px dashed var(--border);
+  border-radius: 9px;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  padding: 15px;
+}
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; min-width: 400px; }
+th, td {
+  text-align: left;
+  padding: 14px 10px;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+}
+th { color: var(--gold); }
+td { color: var(--muted); }
+.empty { text-align: center; padding: 25px; }
+footer {
+  text-align: center;
+  border-top: 1px solid var(--border);
+  margin-top: 45px;
+  padding: 25px 10px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+@media(min-width:650px) {
+  .grid { grid-template-columns: repeat(4,1fr); }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">◆ SOMAL <span>AI TRADER PRO</span></div>
+  <div class="status">● DEMO MODE</div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="eyebrow">INTELLIGENT TRADING PLATFORM</div>
+    <h1>Trade Smarter.<br><span>See Clearly.</span></h1>
+    <p class="subtitle">
+      Intelligent Trading. Transparent Performance.
+      <br>Welcome to the official SOMAL AI TRADER PRO dashboard.
+    </p>
+  </section>
+
+  <div class="notice">
+    <strong>DEMO / NOT LIVE</strong><br>
+    This dashboard is under development.
+    No live brokerage account is connected.
+    No real trades or verified profits are currently reported.
+  </div>
+
+  <h2 class="section-title">Trading Overview</h2>
+
+  <div class="grid">
+    <div class="card">
+      <small>Portfolio Value</small>
+      <div class="value">$—</div>
+    </div>
+    <div class="card">
+      <small>Total Profit / Loss</small>
+      <div class="value gold">—</div>
+    </div>
+    <div class="card">
+      <small>Win Rate</small>
+      <div class="value">—</div>
+    </div>
+    <div class="card">
+      <small>Total Trades</small>
+      <div class="value">0</div>
+    </div>
+  </div>
+
+  <h2 class="section-title">Performance History</h2>
+  <div class="card">
+    <small>Verified portfolio performance</small>
+    <div class="chart">
+      Performance chart will appear
+      after verified trading data is connected.
+    </div>
+  </div>
+
+  <h2 class="section-title">Recent Trading Activity</h2>
+  <div class="card table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Symbol</th>
+          <th>Action</th>
+          <th>Price</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="4" class="empty">
+            No verified trades available yet.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="section-title">Risk & Safety</h2>
+  <div class="grid">
+    <div class="card">
+      <small>Risk Management</small>
+      <div class="value gold" style="font-size:17px">In Development</div>
+    </div>
+    <div class="card">
+      <small>Broker Connection</small>
+      <div class="value gold" style="font-size:17px">Not Connected</div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <strong class="gold">SOMAL AI TRADER PRO</strong>
+  <br>Intelligent Trading. Transparent Performance.
+  <br>Independent trading technology project.
+  <br>Trading involves risk. Profits are never guaranteed.
+  <br>© 2026 SOMAL AI TRADER PRO. All rights reserved.
+</footer>
+
+</body>
+</html>
